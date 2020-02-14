@@ -22,6 +22,7 @@ class App extends React.Component {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => this.setState({ monsters: users }))
+    console.log('component mounted');
   }
 
   render() {
